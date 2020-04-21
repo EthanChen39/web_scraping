@@ -2,15 +2,15 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
+password = str(password)
 loginURL = 'https://swing.langara.bc.ca/prod/twbkwbis.P_WWWLogin'
-# browser = webdriver.Chrome(executable_path='/Users/ethanchen/PycharmProjects/web_scraping/chromedriver')
 browser = webdriver.Safari()
 browser.get(loginURL)
 studentID = browser.find_element_by_id('UserID')
-studentID.send_keys('100304065')
+studentID.send_keys(#ID#)
 time.sleep(0.3)
 password = browser.find_element_by_name('PIN')
-password.send_keys('SC-20000309')
+password.send_keys(#password#)
 time.sleep(0.3)
 password.send_keys(Keys.ENTER)
 time.sleep(1.3)
