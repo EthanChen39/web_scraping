@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-password = str(password)
+
 loginURL = 'https://swing.langara.bc.ca/prod/twbkwbis.P_WWWLogin'
 browser = webdriver.Safari()
 browser.get(loginURL)
